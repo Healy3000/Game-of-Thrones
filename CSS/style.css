@@ -1,10 +1,15 @@
 body {
-  margin: 0;
+  margin-right: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  background: #F22F08;
-  color: white;
+  background: #bf8040;
+  color: #cc9900;
 }
-
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #c68c53;
+		margin-right: 10px;
+    }
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -45,15 +50,25 @@ li a.active {
 
 
 
-
-
 .house {
 	font-family: Geometric;
 	color: white;
 	float:left;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 150px;
+	margin-right: 150px;
 }
+
+
+
+@media screen and (max-width: 750px) {
+.house {
+	font-family: Geometric;
+	color: white;
+	float:left;
+	margin-left:0px;
+	margin-right: 0px;
+}
+
 
 .middle {
   transition: .5s ease;
@@ -74,6 +89,11 @@ li a.active {
   opacity: 1;
 }
 
+@media screen and (max-width: 600px) {
+  .container {
+    display: none;
+  }
+}
 .text {
   background-color: black;
   color: white;
